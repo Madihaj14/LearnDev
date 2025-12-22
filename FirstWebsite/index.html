@@ -77,8 +77,67 @@ It preserves both spaces and line breaks.</pre> <!-- This element displays text 
          
         <hr>
 
+        <h2> This is text formating paragraph.</h2>
+        <p><b>This is bold text.</b></p> <!-- This paragraph contains bold text -->
+        <p><i>This is italic text.</i></p> <!-- This paragraph contains italic text -->
+        <p><u>This is underlined text.</u></p> <!-- This paragraph contains underlined text -->
+        <p><mark>This is marked text.</mark></p> <!-- This paragraph contains highlighted text --> 
+        <p><small>This is small text.</small></p> <!-- This paragraph contains small text -->
+        <p><big>This is big text.</big></p> <!-- This paragraph contains big text -->
+        <p><del>This is deleted text.</del></p> <!-- This paragraph contains deleted text -->
+        <p><ins>This is inserted text.</ins></p> <!-- This paragraph contains inserted text -->
+        <p>This is <sub>subscript</sub>text.</p> <!-- This paragraph contains subscript text -->
+        <p>This is <sup>superscript</sup> text.</p> <!-- This paragraph contains superscript text -->
+        <p>This is <tt>monospaced</tt> text.</p> <!-- This paragraph contains monospaced text -->
+        <p>This is <code>inline code</code> text.</p> <!-- This paragraph contains inline code text -->
 
+        <hr>
 
+        <h2> Span and Div tags </h2>
+        <p>This is a <span style="color:blue;">blue</span> word in a sentence.</p> <!-- This paragraph contains a span element that styles the word "blue" with blue color -->
+        <div style="background-color:lightgrey; padding:10px;">
+            This is a div element with a light grey background and padding.
+        </div> <!-- This div element has a light grey background and padding around its content -->
+
+        <!-- Diff between span and div tags is that span is inline and div is block-level that means, 
+         span does not start on a new line and only takes up as much width as necessary, 
+         while div starts on a new line and takes up the full width available. -->
+        <p>
+            Lorem <span style="color:red;">ipsum dolor sit amet consectetur adipisicing elit.</span>
+            <div>Deserunt dolorem, eum neque quidem numquam qui saepe doloremque porro,
+            suscipit nisi vitae harum ut ullam dolor quam possimus explicabo architecto perspiciatis.</div>
+        </p> 
+            <!-- This is a paragraph which shows the use of both <span> and <div> tags -->
+
+        <hr>
+
+        <h2> Lists in HTML </h2>
+
+        <h3> Unordered List </h3>
+        <ul>  <!-- This element defines an unordered list -->
+            <li>Item 1</li> <!-- This element defines a list item -->
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>   
+
+        <h3> Ordered List </h3>
+        <ol>  <!-- This element defines an ordered list -->
+            <li>First Item</li> <!-- This element defines a list item -->
+            <li>Second Item</li>
+            <li>Third Item</li>
+        </ol>
+
+        <h3> Description List </h3>
+        <dl>  <!-- This element defines a description list -->
+            <dt>Term 1</dt> <!-- This element defines a term -->
+            <dd>Description for Term 1</dd> <!-- This element defines a description for the term -->
+            <dt>Term 2</dt>
+            <dd>Description for Term 2</dd>
+            <dt>Term 3</dt>
+            <dd>Description for Term 3</dd>
+        </dl>
+
+        <hr>
 
     </body>
 </html>
