@@ -127,17 +127,140 @@ It preserves both spaces and line breaks.</pre> <!-- This element displays text 
             <li>Third Item</li>
         </ol>
 
-        <h3> Description List </h3>
-        <dl>  <!-- This element defines a description list -->
-            <dt>Term 1</dt> <!-- This element defines a term -->
-            <dd>Description for Term 1</dd> <!-- This element defines a description for the term -->
-            <dt>Term 2</dt>
-            <dd>Description for Term 2</dd>
-            <dt>Term 3</dt>
-            <dd>Description for Term 3</dd>
+        <h3> Description List - Mythical Creatures </h3>
+        <dl style="background-color: rgb(54, 153, 54); border: 2px solid;">  <!-- This element defines a description list -->
+            <dt>Dragon</dt> <!-- This element defines a term -->
+            <dd>A large, serpent-like creature that is often depicted as having wings and the ability to breathe fire.</dd> <!-- This element defines a description for the term -->
+            <dt>Phoenix</dt>
+            <dd>A mythical bird that is said to burst into flames upon death and be reborn from its ashes.</dd>
+            <dt>Vampire</dt>
+            <dd>A creature from folklore that is said to feed on the blood of the living.</dd>
+            <dt>Unicorn</dt>
+            <dd>A legendary horse-like creature with a single horn on its forehead, often associated with purity and grace.</dd>
         </dl>
 
+        <!-- Nested List Example -->
+        <h3> Nested List Example </h3>
+
+        <ul style="background-color: rgb(53, 23, 185); border: 2px solid;">  <!-- This element defines an unordered list with nested lists -->
+            <li>Fruits
+                <ul>
+                    <li>Apple</li>
+                    <li>Banana</li>
+                    <li>Orange</li>
+                </ul>
+            </li>
+            <li>Vegetables
+                <ul>
+                    <li>Carrot</li>
+                    <li>Broccoli</li>
+                    <li>Spinach</li>
+                </ul>
+            </li>
+        </ul>
+
         <hr>
+
+        <h3> Table Example </h3>
+        <table border="2" style="width:50%; text-align: center;"> <!-- This element defines a table with a border, width, and centered text -->
+            <tr style="background-color: lightcoral;">  <!-- This element defines a table row -->
+                <th> Name </th>  <!-- This element defines a table header cell -->
+                <th> Age </th>
+                <th> City </th>
+            </tr>
+            <tr style="background-color: whitesmoke;">
+                <td> Rachel </td>  <!-- This element defines a table data cell -->
+                <td> 20 </td>
+                <td> New York </td>
+            </tr>
+            <tr style="background-color: whitesmoke;">
+                <td> Harvey </td>
+                <td> 35 </td>
+                <td> Los Angeles </td>
+            </tr>
+            <tr style="background-color: whitesmoke;">
+                <td> Emily </td>
+                <td> 25 </td>
+                <td> Chicago </td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <h3> Buttons in HTML </h3>
+
+        <button style="font-size: 20px; background-color: green; color: darkblue; border-radius: 15px;" type="button">Press Here!</button>
+        <!-- This element defines a button that shows an alert when clicked -->
+        <script>
+            document.querySelector('button').addEventListener('click', function() {
+                alert('Button Clicked!');
+            });
+        </script>
+
+        <a href="Lyrics.html" target="_blank">
+        <button style="font-size: 20px; background-color: blue; color: lightblue; border-radius: 25px;" type="button">Click Me!</button> 
+        <!-- This element defines a button that takes us to a new page when clicked -->
+        </a>
+
+        <hr>
+
+        <h3> Forms in HTML </h3>
+        <form action="/submit" method="post" enctype="multipart/form-data">  <!-- This element defines a form that submits data to the specified action URL using the POST method -->
+            <label for="name">Name:</label>  <!-- This element defines a label for the input field, the for attribute means the screen reader will read the label when the input field is focused and also when we take the cursor on the name it will take you to the text box-->
+            <input type="text" id="name" name="name" minlength="3" required> <!-- This element defines a text input field that is required -->
+            <br><br> <!-- Two line breaks are used because it improves spacing and readability -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="emily@paris.com" required> <!-- This element defines an email input field that is required -->
+            <br><br>
+            <label for="password">Password:</label>
+            <input type ="password" id="password" name="password" minlength="5" required> <!-- This element defines a password input field that is required -->
+            <br><br>
+            <label for="phone">Phone:</label>
+            <input type ="tel" id="phone" name="phone" placeholder="123-456-7890" minlength="10" required> <!-- This element defines a telephone input field that is required -->
+            <br><br>
+            <label for="bday">Birthday:</label>
+            <input type ="date" id="bday" name="bday" placeholder="dd-mm-yyyy" required> <!-- This element defines a date input field that is required -->
+            <br><br>
+            <label for="quantity">Quantity:</label>
+            <input type ="number" id="quantity" name="quantity" min="1" max="99" required> <!-- This element defines a number input field that is required -->
+            <br><br>
+            <label>Title:</label>  <!-- This element defines a label for the radio buttons -->
+
+            <label for="Mr.">Mr.</label>
+            <input type="radio" id="Mr." name="title" value="Mr.">  <!-- This element defines a radio button for selecting a title -->
+            <label for="Ms.">Ms.</label>
+            <input type="radio" id="Ms." name="title" value="Ms.">
+            <label for="Mrs.">Mrs.</label>
+            <input type="radio" id="Mrs." name="title" value="Mrs.">
+            <label for="Phd.">PhD.</label>
+            <input type="radio" id="Phd." name="title" value="Phd.">
+            <br><br>
+            <label for="payment">Payment:</label>
+            <select id="payment" name="payment">  <!-- This element defines a dropdown menu for selecting a payment method -->
+                <option value="creditcard">Credit Card</option>  <!-- This element defines an option in the dropdown menu -->
+                <option value="debitcard">Debit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="cod">Cash on Delivery</option>
+            </select>
+            <br><br>
+            <label for="subscribe">Subscribe:</label>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes"> <!-- This element defines a checkbox for subscribing -->
+            <br><br>
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Enter your comments here..."></textarea> <!-- This element defines a multi-line text input area for comments -->
+            <br><br>
+            <label for="attach">Attach Docs:</label>
+            <input type="file" id="attach" name="attach" accept="application/pdf, image/png, image/jpeg" multiple> <!-- This element defines a file input field for attaching documents -->
+            <br><br>
+            <input type ="reset" value="Reset"> <!-- This element defines a reset button to clear the form data -->
+            <br><br> 
+            <input type="submit" value="Submit"> <!-- This element defines a submit button to send the form data -->
+        </form>
+
+        <hr>
+
+        <h3> Header and footer </h3>
+
 
         
 
