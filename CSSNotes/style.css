@@ -1,3 +1,7 @@
+/*External CSS is reusable and hence very convenient as well, 
+which promotes better organization and maintainability of styles.
+We can link multiple HTML files to a single style sheet */
+
 body {
     background-color: black;
     font-family: Arial, sans-serif;
@@ -20,6 +24,12 @@ h1 {
     color: red;
     font-size: 16px;
     line-height: 1.5;
+}
+.odd {
+    background-color: blue;
+}
+.even {
+    background-color: purple;
 }
 header {
     background-color: hotpink;
