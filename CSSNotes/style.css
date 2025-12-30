@@ -1,70 +1,33 @@
-/*External CSS is reusable and hence very convenient as well, 
-which promotes better organization and maintainability of styles.
-We can link multiple HTML files to a single style sheet */
+@font-face {
+    src: url(fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf);
+    font-family: OpenSans;
+    
+} /* Importing a custom font named OpenSans from local directory, instead of an API */
 
-body {
-    background-color: black;
-    font-family: Arial, sans-serif;
+body{
+    background-color: rgb(41, 41, 41);
+} 
+h1{
+    font-family: Roboto, verdana, arial; /* Font family: That means these are the fonts that will be used to display the text. Two options are given just in case a certain browser doesn't suppost the first */
+    border-style: solid;
+    bprder-width: 3px;
+    border
 }
-h1 {
-    box-align: center;
-    color: black;
+p{
+    font-family: OpenSans , "lucida console", "courier new"; /* Font family: That means these are the fonts that will be used to display the text. Two options are given just in case a certain browser doesn't suppost the first */
+    font-size: 1em; /* Font size: That means the size of the text. 1em is equal to the current font size of the element */
+    font-weight: bold; /* Font weight: That means how thick or thin the text is. Bold means thick */
+    font-style: italic; /* Font style: That means the style of the text. Italic means slanted */
 }
 #p1 {
-    color: yellow;
-    font-size: 16px;
-    line-height: 1.5;
+    color: tomato; /* Named color: That means these are colors defined by their name */
 }
 #p2 {
-    color: orange;
-    font-size: 16px;
-    line-height: 1.5;
+    color: rgb(49, 49, 115); /* RGB color: That means these are colors defined by their red, green, and blue components */
 }
 #p3 {
-    color: red;
-    font-size: 16px;
-    line-height: 1.5;
+    color: hsl(296, 70%, 63%); /* HSL color: That means these are colors defined by their hue, saturation, and lightness */
 }
-.odd {
-    background-color: blue;
-}
-.even {
-    background-color: purple;
-}
-header {
-    background-color: hotpink;
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    padding: 10px 0;
-}
-footer {
-    background-color: hotpink;
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    margin-top: 200px;
-}
-nav {
-    background-color: lightgray;
-    padding: 10px;
-}
-nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-nav a:hover {
-    text-decoration: underline;
-}
-section {
-    margin: 20px;
-    padding: 20px;
-    background-color: #222;
-    color: white;
-    border-radius: 8px;
-}
-section h2 {
-    color: hotpink;
+#p4 {
+    color: #e2e230; /* Hex color: That means these are colors defined by their hex code */
 }

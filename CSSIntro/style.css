@@ -1,0 +1,70 @@
+/*External CSS is reusable and hence very convenient as well, 
+which promotes better organization and maintainability of styles.
+We can link multiple HTML files to a single style sheet */
+
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+}
+h1 {
+    box-align: center;
+    color: black;
+}
+#p1 {
+    color: yellow;
+    font-size: 16px;
+    line-height: 1.5;
+}
+#p2 {
+    color: orange;
+    font-size: 16px;
+    line-height: 1.5;
+}
+#p3 {
+    color: red;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.odd {
+    background-color: blue;
+}
+.even {
+    background-color: purple;
+}
+header {
+    background-color: hotpink;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0;
+}
+footer {
+    background-color: hotpink;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 200px;
+}
+nav {
+    background-color: lightgray;
+    padding: 10px;
+}
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+    border-radius: 8px;
+}
+section h2 {
+    color: hotpink;
+}
