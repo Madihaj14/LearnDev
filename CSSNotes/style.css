@@ -10,8 +10,7 @@ body{
 h1{
     font-family: Roboto, verdana, arial; /* Font family: That means these are the fonts that will be used to display the text. Two options are given just in case a certain browser doesn't suppost the first */
     border-style: solid;
-    bprder-width: 3px;
-    border
+    border-width: 3px;
 }
 p{
     font-family: OpenSans , "lucida console", "courier new"; /* Font family: That means these are the fonts that will be used to display the text. Two options are given just in case a certain browser doesn't suppost the first */
