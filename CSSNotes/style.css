@@ -10,7 +10,10 @@ body{
 h1{
     font-family: Roboto, verdana, arial; /* Font family: That means these are the fonts that will be used to display the text. Two options are given just in case a certain browser doesn't suppost the first */
     border-style: solid;
-    border-width: 3px;
+    border-width: 3.5px;
+    border-color: white;
+    text-align: center; /* Text align: That means the alignment of the text. Center means the text will be in the middle */
+    color: white; /* Named color: That means these are colors defined by their name */
 }
 p{
     font-family: OpenSans , "lucida console", "courier new"; /* Font family: That means these are the fonts that will be used to display the text. Two options are given just in case a certain browser doesn't suppost the first */
