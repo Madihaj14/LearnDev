@@ -8,13 +8,27 @@ body{
     background-color: rgb(41, 41, 41);
 } 
 h1{
+    text-align: center; /* Text align: That means the alignment of the text. Center means the text will be centered */
+    color: white; /* Named color: That means these are colors defined by their name */
+    text-shadow: 3.5px 3.5px 4px rgb(248, 23, 162), -3.5px -3.5px 4px rgb(7, 115, 238); /* Text shadow: That means the shadow of the text. It is defined by its horizontal offset, vertical offset, blur radius, and color */
+}
+#box1{
+    width: 100px; /* Width: That means the width of the element. 300px means 300 pixels */
+    height: 100px; /* Height: That means the height of the element. 200px means 200 pixels */
+    background-color: white; /* Background color: That means the background color of the element. It is defined by its red, green, and blue components */
+    margin: 0 auto; /* Margin: That means the space around the element. 0 auto means no vertical margin and automatic horizontal margin (centered) */
+    box-shadow: 3.5px 3.5px 4px rgb(20, 184, 69), -3.5px -3.5px 4px rgb(7, 115, 238); /* Box shadow: That means the shadow of the element. It is defined by its horizontal offset, vertical offset, blur radius, and color */
+}
+h2{
+    text-align: center; /* Text align: That means the alignment of the text. Center means the text will be centered */
     font-family: Roboto, verdana, arial; /* Font family: That means these are the fonts that will be used to display the text. Two options are given just in case a certain browser doesn't suppost the first */
     border-style: solid;
     border-width: 3.5px;
-    border-color: white;
-    text-align: center; /* Text align: That means the alignment of the text. Center means the text will be in the middle */
-    color: white; /* Named color: That means these are colors defined by their name */
+    border-color: rgb(27, 215, 209);
+    border-radius: 15px; /* Border radius: That means the roundness of the border's corners. 15px means 15 pixels */
+   
 }
+
 p{
     font-family: OpenSans , "lucida console", "courier new"; /* Font family: That means these are the fonts that will be used to display the text. Two options are given just in case a certain browser doesn't suppost the first */
     font-size: 1em; /* Font size: That means the size of the text. 1em is equal to the current font size of the element */
@@ -22,9 +36,17 @@ p{
     font-style: italic; /* Font style: That means the style of the text. Italic means slanted */
 }
 #p1 {
+
+    border: 3px solid rgb(247, 5, 219); /* Border shorthand: That means the border of the element. It is defined by its width, style, and color */
     color: tomato; /* Named color: That means these are colors defined by their name */
 }
 #p2 {
+
+    border-bottom: 3px dashed rgb(135, 177, 22); /* Border bottom shorthand: That means the bottom border of the element. It is defined by its width, style, and color */
+    border-top: 3px dotted rgb(16, 202, 62); /* Border top shorthand: That means the top border of the element. It is defined by its width, style, and color */
+    border-left: 3px double rgb(202, 50, 12); /* Border left shorthand: That means the left border of the element. It is defined by its width, style, and color */
+    border-right: 3px solid rgb(29, 177, 231); /* Border right shorthand: That means the right border of the element. It is defined by its width, style, and color */
+    border-radius: 15px; /* Border radius: That means the roundness of the border's corners. 15px means 15 pixels */
     color: rgb(49, 49, 115); /* RGB color: That means these are colors defined by their red, green, and blue components */
 }
 #p3 {
