@@ -5,6 +5,8 @@
 } /* Importing a custom font named OpenSans from local directory, instead of an API */
 
 body{
+    border: 5px solid; /* Border shorthand: That means the border of the element. It is defined by its width, style, and color */
+    display: flow-root; /* Display: That means how the element is displayed. Flow-root means the element will create a new block formatting context */
     background-color: rgb(41, 41, 41);
     margin: 0; /* Margin: That means the space around the element. 0 means no margin */
 } 
@@ -33,6 +35,7 @@ h1{
 }
 #box3{
     background-color: rgb(4, 155, 214);
+    margin: auto; /* Margin: Auto means the element will be centered horizontally */
 }
 
 h2{
@@ -70,4 +73,12 @@ p{
 }
 #p4 {
     color: #e2e230; /* Hex color: That means these are colors defined by their hex code */
+}
+#img1{
+    float: left; /* Float: That means the element will float to the left side of its container */
+    margin: 0 15px 15px 0; /* Margin: That means the space around the element. 0 15px 15px 0 means no top margin, 15px right margin, 15px bottom margin, and no left margin */
+}
+#img2{
+    float: right; /* Float: That means the element will float to the right side of its container */
+    margin: 0 0 15px 15px; /* Margin: That means the space around the element. 0 0 15px 15px means no top margin, no right margin, 15px bottom margin, and 15px left margin */
 }
