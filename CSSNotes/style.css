@@ -6,6 +6,7 @@
 
 body{
     background-color: rgb(41, 41, 41);
+    margin: 0; /* Margin: That means the space around the element. 0 means no margin */
 } 
 h1{
     text-align: center; /* Text align: That means the alignment of the text. Center means the text will be centered */
@@ -19,6 +20,21 @@ h1{
     margin: 0 auto; /* Margin: That means the space around the element. 0 auto means no vertical margin and automatic horizontal margin (centered) */
     box-shadow: 3.5px 3.5px 4px rgb(20, 184, 69), -3.5px -3.5px 4px rgb(7, 115, 238); /* Box shadow: That means the shadow of the element. It is defined by its horizontal offset, vertical offset, blur radius, and color */
 }
+.box{
+    border: 5px solid;
+    font-size: 5em;
+    width: 250px;
+    height: 250px;
+}
+#box2{
+    background-color: rgb(175, 6, 6);
+    margin-bottom: 50px; /* Margin bottom: That means the space below the element. 50px means 50 pixels */
+    margin-left: 50px; /* Margin left: That means the space to the left of the element. 50px means 50 pixels */
+}
+#box3{
+    background-color: rgb(4, 155, 214);
+}
+
 h2{
     text-align: center; /* Text align: That means the alignment of the text. Center means the text will be centered */
     font-family: Roboto, verdana, arial; /* Font family: That means these are the fonts that will be used to display the text. Two options are given just in case a certain browser doesn't suppost the first */
