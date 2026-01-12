@@ -53,11 +53,14 @@ p{
     font-size: 1em; /* Font size: That means the size of the text. 1em is equal to the current font size of the element */
     font-weight: bold; /* Font weight: That means how thick or thin the text is. Bold means thick */
     font-style: italic; /* Font style: That means the style of the text. Italic means slanted */
+    padding: 25px; /* Padding: That means the space inside the element between the content and the border. 20px means 20 pixels */
+
 }
 #p1 {
 
     border: 3px solid rgb(247, 5, 219); /* Border shorthand: That means the border of the element. It is defined by its width, style, and color */
     color: tomato; /* Named color: That means these are colors defined by their name */
+
 }
 #p2 {
 
@@ -81,4 +84,39 @@ p{
 #img2{
     float: right; /* Float: That means the element will float to the right side of its container */
     margin: 0 0 15px 15px; /* Margin: That means the space around the element. 0 0 15px 15px means no top margin, no right margin, 15px bottom margin, and 15px left margin */
+}
+#D1{
+    border : 2px solid black;
+    height: 75px;
+    /* overflow: visible;  Overflow: That means how to handle content that overflows the element's box. Visible means the overflowed content will be visible */
+    /* overflow: hidden;  Overflow: That means how to handle content that overflows the element's box. Hidden means the overflowed content will be hidden */
+    /* overflow: auto;  Overflow: That means how to handle content that overflows the element's box. Auto means the overflowed content will be scrollable if needed */
+    /* overflow: clip;  Overflow: That means how to handle content that overflows the element's box. Clip means the overflowed content will be clipped */
+    overflow: scroll; /* Overflow: That means how to handle content that overflows the element's box. Scroll means the overflowed content will be scrollable */
+
+}
+#D2{
+    background-color: tomato;
+    height: 100px;
+    width: 100px;
+    display: inline-block; /* Display: That means how the element is displayed. Inline-block means the element will be displayed as an inline-level block container */
+    visibility: visible; /* Visibility: That means whether the element is visible or not. Visible means the element will be visible */
+    /* visibility: hidden;  Visibility: That means whether the element is visible or not. Hidden means the element will be hidden but still take up space */
+    /* visibility: collapse;  Visibility: That means whether the element is visible or not. Collapse means the element will be hidden and will not take up any space */
+    /* visibility: initial;  Visibility: That means whether the element is visible or not. Initial means the element will be visible */
+}
+span{
+    background-color: skyblue;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+}
+.box{
+    border: 2px solid grey;
+    padding: 25px;
+    box-sizing: border-box; /* Box sizing: That means how the width and height of the element are calculated. Border-box means the width and height include the content, padding, and border */
+    height: auto; /* Height: Auto means the height of the element will be determined by its content */
+    width: 50%; /* Width: 50% means the width of the element will be 50% of its parent element's width */   
+    float: left; /* Float: That means the element will float to the left side of its container */
+    
 }
