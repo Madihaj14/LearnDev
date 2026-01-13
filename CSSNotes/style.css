@@ -111,12 +111,14 @@ span{
     width: 100px;
     display: inline-block;
 }
-.box{
+.square{
     border: 2px solid grey;
     padding: 25px;
     box-sizing: border-box; /* Box sizing: That means how the width and height of the element are calculated. Border-box means the width and height include the content, padding, and border */
     height: auto; /* Height: Auto means the height of the element will be determined by its content */
     width: 50%; /* Width: 50% means the width of the element will be 50% of its parent element's width */   
     float: left; /* Float: That means the element will float to the left side of its container */
+    text-align: center; /* Text align: That means the alignment of the text. Center means the text will be centered */
+    
     
 }
