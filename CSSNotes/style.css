@@ -5,6 +5,7 @@
 } /* Importing a custom font named OpenSans from local directory, instead of an API */
 
 body{
+    
     border: 5px solid; /* Border shorthand: That means the border of the element. It is defined by its width, style, and color */
     display: flow-root; /* Display: That means how the element is displayed. Flow-root means the element will create a new block formatting context */
     background-color: rgb(41, 41, 41);
@@ -119,6 +120,22 @@ span{
     width: 50%; /* Width: 50% means the width of the element will be 50% of its parent element's width */   
     float: left; /* Float: That means the element will float to the left side of its container */
     text-align: center; /* Text align: That means the alignment of the text. Center means the text will be centered */
-    
-    
 }
+
+#D5{
+    width: 200px;
+    height: 200px;
+    background-color: darkgreen;
+    position: relative; /* Position: That means how the element is positioned. Relative means the element will be positioned relative to its normal position */
+    top: 100px; /* Top: That means the distance from the top of the element to the top of its containing block. 100px means 100 pixels */
+    left: 100px; /* Left: That means the distance from the left of the element to the left of its containing block. 50px means 50 pixels */
+}
+#D6{
+    width: 100px;
+    height: 100px;
+    background-color: fuchsia;
+    position: absolute; /* Position: That means how the element is positioned. Absolute means the element will be positioned relative to its nearest positioned ancestor */
+    top: 50px; /* Top: That means the distance from the top of the element to the top of its containing block. 50px means 50 pixels */
+    left: 50px; /* Left: That means the distance from the left of the element to the left of its containing block. 50px means 50 pixels */
+}
+
