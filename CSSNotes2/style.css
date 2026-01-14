@@ -1,4 +1,9 @@
 body{
-    background-image: url(images/webbg.webp);
+
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
     
 } 
