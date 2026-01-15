@@ -24,6 +24,10 @@
     | 2. Child combinator (>):
     | 3. Adjacent sibling combinator (+):
     | 4. General sibling combinator (~):
+    selector1 selector2 { ... }          /* Descendant combinator */
+    selector1 > selector2 { ... }        /* Child combinator */
+    selector1 + selector2 { ... }       /* Adjacent sibling combinator */
+    selector1 ~ selector2 { ... }       /* General sibling combinator */
     | -->
 
     <div id="container">

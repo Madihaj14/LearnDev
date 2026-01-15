@@ -1,9 +1,15 @@
 body{
 
-    background-image: url(images/background.png);
+    background-image: url(images/pinkbg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
     
 } 
+#container{
+    border: 2px solid black;
+}
+#container p{
+    background-color: rgb(210, 210, 16);
+}
