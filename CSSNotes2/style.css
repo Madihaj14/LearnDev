@@ -5,11 +5,41 @@ body{
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    font-size: large;
     
 } 
 #container{
     border: 2px solid black;
 }
-#container p{
+#container p{ /* Descendant combinator: selector1 selector2; that targets all <p> elements inside #container */
     background-color: rgb(210, 210, 16);
+}
+
+a:link { /* Pseudo-class selectors for different link states */
+    color: rgb(11, 197, 207);
+    font-size: 1.2em;
+
+}
+a:hover { /* Pseudo-class selector for hover state */
+    color: red;
+    font-size: 1.5em;
+}
+a:active{ /* Pseudo-class selector for active state */
+    color: blue;
+    font-size: 1.5em;
+}
+a:visited{ /* Pseudo-class selector for visited state */
+    color: green;
+    font-size: 1.2em;
+}
+
+li:hover{  /* Pseudo-class selector for hover state on list items */
+    background-color: rgb(255, 242, 0);
+}
+li:not(:hover){ /* Pseudo-class selector for non-hover state on list items */
+    background-color: white;
+}
+
+li:nth-child(3n-1){ /* Pseudo-class selector for every 3rd list item */
+    background-color: rgb(200, 200, 200);
 }
