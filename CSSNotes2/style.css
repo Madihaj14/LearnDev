@@ -43,3 +43,50 @@ li:not(:hover){ /* Pseudo-class selector for non-hover state on list items */
 li:nth-child(3n-1){ /* Pseudo-class selector for every 3rd list item */
     background-color: rgb(200, 200, 200);
 }
+
+#greeting p{
+    background-color: lightblue;
+    padding: 10px;
+    display: none; /* Initially hide the paragraph */
+}
+
+#greeting:hover p{
+    display: block; /* Show the paragraph on hover */
+}
+
+h1::first-letter{ /* Pseudo-element selector to style the first letter of h1 */
+    font-size: 2em;
+    font-style: italic;
+}
+
+#intro::first-line{ /* Pseudo-element selector to style the first line of paragraphs */
+    background-color: green;
+}
+
+#intro::selection{ /* Pseudo-element selector to style selected text */
+    background-color: blueviolet;
+    color: black;
+}
+
+#fruits li::before{ /* Pseudo-element selector to add content before each list item */
+    content: "✔️ ";
+}
+
+#Apple::after{ /* Pseudo-element selector to add content after each list item */
+    content: " 🍎";
+}
+
+#Banana::after{ /* Pseudo-element selector to add content after each list item */
+    content: " 🍌";
+}
+
+#Cherry::after{ /* Pseudo-element selector to add content after each list item */
+    content: " 🍒";
+}
+
+#fruits li::marker{ /* Pseudo-element selector to style the list item marker */
+    content: "🟨 ";
+    color: rgb(38, 33, 185);
+    font-size: 1.5em;
+}
+
