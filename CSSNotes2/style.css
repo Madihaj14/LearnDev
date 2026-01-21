@@ -69,8 +69,12 @@ h1::first-letter{ /* Pseudo-element selector to style the first letter of h1 */
 }
 
 #fruits li::before{ /* Pseudo-element selector to add content before each list item */
-    content: "✔️ ";
+    content: "✓ ";
+    color: rgb(31, 210, 31);
+    font-weight: bold;      /* Makes the checkmark thicker */
+    font-size: 1.5em;       /* Optional: makes it larger */
 }
+
 
 #Apple::after{ /* Pseudo-element selector to add content after each list item */
     content: " 🍎";
@@ -86,7 +90,25 @@ h1::first-letter{ /* Pseudo-element selector to style the first letter of h1 */
 
 #fruits li::marker{ /* Pseudo-element selector to style the list item marker */
     content: "🟨 ";
-    color: rgb(38, 33, 185);
     font-size: 1.5em;
+    
+}
+.pagination{
+    text-align: center;
+}
+.pagination a{
+    color: black;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: inline-block;
+}
+.pagination a:active{
+    background-color: blue;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.pagination a:hover:not(.active){
+    background-color: rgb(98, 100, 100);
+    border-radius: 5px;
 }
 
