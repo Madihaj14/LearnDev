@@ -102,13 +102,18 @@ h1::first-letter{ /* Pseudo-element selector to style the first letter of h1 */
     padding: 8px 15px;
     display: inline-block;
 }
-.pagination a:active{
+.pagination a.active{
     background-color: blue;
     font-weight: bold;
     border-radius: 5px;
 }
 .pagination a:hover:not(.active){
-    background-color: rgb(98, 100, 100);
+    background-color: rgb(9, 192, 15);
     border-radius: 5px;
+}
+
+.dropdown button{
+    background-color: grey
+    color: white
 }
 
