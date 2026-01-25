@@ -93,27 +93,60 @@ h1::first-letter{ /* Pseudo-element selector to style the first letter of h1 */
     font-size: 1.5em;
     
 }
-.pagination{
+.pagination{ /* Pagination container */
     text-align: center;
 }
-.pagination a{
+.pagination a{  /* Pagination links: All the <a> elements inside .pagination */
     color: black;
     text-decoration: none;
     padding: 8px 15px;
     display: inline-block;
 }
-.pagination a.active{
+.pagination a.active{ /* When the link is active, that is, the current page */
     background-color: blue;
     font-weight: bold;
     border-radius: 5px;
 }
-.pagination a:hover:not(.active){
+.pagination a:hover:not(.active){  /* On hover, but not active, that is, when the user hovers over a link */
     background-color: rgb(9, 192, 15);
     border-radius: 5px;
 }
 
-.dropdown button{
-    background-color: grey
-    color: white
+.dropdown { /* This is the dropdown class */
+    display: inline-block;
+}
+
+.dropdown button { /* This is the button inside the dropdown class*/
+    background-color: rgb(121, 117, 117);
+    color: white;
+    padding: 10px 15px;
+    cursor:pointer;
+}
+
+.dropdown a { /* This is the <a> elements inside the dropdown class */
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.dropdown .content { /* This is the content class inside the dropdown class */
+    display: none;
+    position: absolute;
+    background-color: rgb(214, 214, 214);
+    min-width: 100px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.774); /* Adds shadow effect: first number is horizontal offset, second is vertical offset, third is blur radius */
+}
+
+.dropdown:hover .content { /* Show the dropdown content on hover */
+    display: block;
+}
+
+.dropdown:hover button { /* Change button style on hover */
+    background-color: coral;
+}
+
+.dropdown a:hover { /* Change button style on hover */
+    background-color: cornflowerblue;
 }
 
