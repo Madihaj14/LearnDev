@@ -150,11 +150,4 @@ h1::first-letter{ /* Pseudo-element selector to style the first letter of h1 */
     background-color: cornflowerblue;
 }
 
-.navbar {
-    list-style-type: none;
-    background-color: rgb(138, 135, 135);
-    padding: 0px;
-    margin: 0px;
-    
-}
 
