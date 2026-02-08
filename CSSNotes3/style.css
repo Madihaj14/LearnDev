@@ -11,7 +11,7 @@ h1{
     text-align: center;
 }
 
-.navbar ul{ // Navigation Bar List
+.navbar ul{ 
     list-style-type: none;
     background-color: rgb(51, 51, 51);
     padding: 0px;
@@ -19,7 +19,7 @@ h1{
     overflow: hidden;
 }
 
-.navbar a{ // Navigation Bar Links
+.navbar a{ 
     color:white;
     text-decoration: none;
     padding: 15px;
@@ -27,9 +27,9 @@ h1{
     text-align: center;
 }
 
-.navbar a:hover{ // Navigation Bar Link Hover Effect
+.navbar a:hover{ 
     background-color: hsl(0, 0%, 10%);
 }
-.navbar li{ // Navigation Bar List Items
+.navbar li{ 
     float: left;
 }
